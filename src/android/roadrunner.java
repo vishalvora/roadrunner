@@ -1,4 +1,4 @@
-package cordova-plugin-roadrunner;
+package cordova.plugin.roadrunner;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
