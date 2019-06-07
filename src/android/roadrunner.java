@@ -17,7 +17,7 @@ public class roadrunner extends CordovaPlugin {
        
        if(action.equals("add")){
            this.add(args, callbackContext);
-           return true
+           return true;
        }
         return false;
     }
@@ -29,18 +29,18 @@ public class roadrunner extends CordovaPlugin {
 
             try{
 
-                int p1 = Integer.paseInt(args.getJsonObject(0).getString("param1"))
-                int p2 = Integer.paseInt(args.getJsonObject(0).getString("param2"))
+                int p1 = Integer.paseInt(args.getJsonObject(0).getString("param1"));
+                int p2 = Integer.paseInt(args.getJsonObject(0).getString("param2"));
 
                 callback.success(""+(p1+p2));
 
             }catch(Exception ex)
             {
-                callback.error("something went worng")
+                callback.error("something went worng");
             }
 
         }else{
-            callback.error("please pass correct perm")
+            callback.error("please pass correct perm");
         }
 
     }
